@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio</title>
+<meta name="description" content="Plataforma de simulaciones, actividades didácticas y retos de Tecnología e Informática.">
+<meta name="theme-color" content="#12203A">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor interno">
+    <a class="marca" href="index.html"><span class="marca-logo" aria-hidden="true">L</span><span data-p="nombre">[NOMBRE DEL PROYECTO]</span></a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#grados">Grados</a>
+      <a href="#simulaciones">Simulaciones</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#retos">Retos</a>
+      <a href="#docentes">Docentes</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- PORTADA -->
+  <section class="portada">
+    <div class="contenedor interno">
+      <div class="portada-texto">
+        <div class="etiqueta-hero"><span data-p="area">Tecnología e Informática</span> · <span data-p="colegio">Colegio</span></div>
+        <h1 data-p="nombre">[NOMBRE DEL PROYECTO]</h1>
+        <p class="portada-sub" data-p="frase">[Frase corta]</p>
+        <div class="botones">
+          <a class="btn btn-ambar" href="#grados">Elegir mi grado</a>
+          <a class="btn btn-borde" href="#simulaciones">Ver simulaciones</a>
+        </div>
+      </div>
+      <div class="tarjeta-progreso" aria-label="Tu progreso">
+        <div class="tp-fila"><strong>Tu progreso</strong><span class="tp-nivel" id="tp-nivel">Nivel 1</span></div>
+        <div class="barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="tp-barra"><span class="barra-fill" id="tp-fill" style="width:0%"></span></div>
+        <div class="tp-texto" id="tp-texto">0 pasos completados</div>
+        <div class="slots" id="tp-slots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRADOS -->
+  <section class="seccion" id="grados">
+    <div class="contenedor">
+      <div class="encabezado">
+        <h2>Elige tu grado</h2>
+        <p>Cada grado tiene sus unidades. Entra a la que te toca o explora otras.</p>
+      </div>
+      <div class="rejilla-g" id="grados-lista"></div>
+      <div class="panel-unidades" id="panel-unidades" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="seccion" style="padding-top:0">
+    <div class="contenedor">
+      <div class="encabezado">
+        <h2>Cómo funciona cada unidad</h2>
+        <p>Cuatro pasos cortos, siempre en el mismo orden, para no perder la atención.</p>
+      </div>
+      <div class="rejilla">
+        <div class="paso p1"><span class="num">1</span><h3>Explora</h3><p>Lee la idea central en pocas líneas.</p><span class="tiempo">~3 min</span></div>
+        <div class="paso p2"><span class="num">2</span><h3>Simula</h3><p>Prueba y observa qué pasa en una simulación.</p><span class="tiempo">~10 min</span></div>
+        <div class="paso p3"><span class="num">3</span><h3>Practica</h3><p>Actividades: relacionar, ordenar, clasificar o quiz.</p><span class="tiempo">~10 min</span></div>
+        <div class="paso p4"><span class="num">4</span><h3>Reta</h3><p>Una misión final para ganar una insignia.</p><span class="tiempo">~5 min</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULACIONES -->
+  <section class="seccion seccion-t" id="simulaciones">
+    <div class="contenedor">
+      <div class="encabezado">
+        <h2>Simulaciones</h2>
+        <p style="color:#3E4A6B">Prueba, cambia valores y mira qué pasa, sin riesgo ni materiales.</p>
+      </div>
+      <div class="rejilla-3" id="sims-lista"></div>
+    </div>
+  </section>
+
+  <!-- ACTIVIDADES -->
+  <section class="seccion" id="actividades">
+    <div class="contenedor">
+      <div class="encabezado">
+        <h2>Actividades didácticas</h2>
+        <p>Formatos cortos con respuesta inmediata, para practicar sin aburrirse.</p>
+      </div>
+      <div class="rejilla">
+        <div class="tipo-act"><h3>Relacionar conceptos</h3><p>Une cada concepto con su definición o ejemplo.</p><div class="muestra"><span>A</span><span>B</span></div></div>
+        <div class="tipo-act"><h3>Ordenar pasos</h3><p>Acomoda los pasos de un proceso en el orden correcto.</p><div class="muestra"><span>1</span><span>2</span><span>3</span></div></div>
+        <div class="tipo-act"><h3>Clasificar</h3><p>Lleva cada elemento a su categoría.</p><div class="muestra"><span>Cat. 1</span><span>Cat. 2</span></div></div>
+        <div class="tipo-act"><h3>Quiz rápido</h3><p>Preguntas cortas con explicación al responder.</p><div class="muestra"><span>A</span><span>B</span><span>C</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RETOS -->
+  <section class="seccion seccion-a" id="retos">
+    <div class="contenedor">
+      <div class="retos">
+        <div class="retos-texto">
+          <h2>Retos y misiones</h2>
+          <p data-p="historiaRetos">[Historia corta]</p>
+          <div class="insignias" id="insignias-lista"></div>
+        </div>
+        <div class="misiones" id="misiones-lista"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCENTES Y OPINION -->
+  <section class="seccion" id="docentes">
+    <div class="contenedor dos">
+      <div class="caja">
+        <h3>Para docentes</h3>
+        <p>Guía de uso, objetivos por unidad y sugerencias para llevar las actividades al aula.</p>
+        <a class="btn btn-verde" data-enlace="guiaDocente" href="#docentes">Ver guía docente</a>
+      </div>
+      <div class="caja caja-verde">
+        <h3>Tu opinión cuenta</h3>
+        <p>Responde una encuesta corta para ayudarnos a mejorar la plataforma.</p>
+        <div class="botones" style="margin:0">
+          <a class="btn btn-oscuro" data-enlace="encuestaEstudiantes" href="#docentes">Encuesta estudiantes</a>
+          <a class="btn btn-borde-o" data-enlace="encuestaDocentes" href="#docentes">Encuesta docentes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor interno">
+    <div><strong data-p="nombre">[NOMBRE DEL PROYECTO]</strong><span data-p="colegio"></span> · <span data-p="area"></span></div>
+    <div>Práctica pedagógica · <span data-p="anio"></span><br><span data-p="autor"></span> · <span data-p="universidad"></span></div>
+  </div>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/comun.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

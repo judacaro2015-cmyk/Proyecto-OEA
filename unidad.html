@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unidad</title>
+<meta name="theme-color" content="#12203A">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="contenedor-ancho interno" style="display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding-top:14px;padding-bottom:14px">
+    <a class="marca" href="index.html"><span class="marca-logo" aria-hidden="true">L</span><span data-p="nombre">[NOMBRE DEL PROYECTO]</span></a>
+    <div class="mini-progreso">
+      <span>Tu progreso</span>
+      <span class="barra" style="flex:1" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="mp-barra"><span class="barra-fill" id="mp-fill" style="width:0%"></span></span>
+    </div>
+  </div>
+</header>
+
+<div class="contenedor-ancho">
+  <div class="migas" id="migas"></div>
+  <h1 class="titulo-u" id="titulo-u"></h1>
+
+  <div class="u-layout">
+    <nav class="u-lado" aria-label="Pasos de la unidad" id="u-pasos"></nav>
+    <main class="u-centro" id="u-centro"></main>
+    <aside class="u-guia" id="u-guia" aria-label="Guía"></aside>
+  </div>
+
+  <div class="u-nav">
+    <button type="button" class="btn btn-borde-o" id="btn-ant">‹ Anterior</button>
+    <button type="button" class="btn btn-oscuro" id="btn-sig">Siguiente ›</button>
+  </div>
+</div>
+
+<script src="js/datos.js"></script>
+<script src="js/comun.js"></script>
+<script src="js/actividades.js"></script>
+<script src="js/simulaciones.js"></script>
+<script src="js/unidad.js"></script>
+</body>
+</html>
